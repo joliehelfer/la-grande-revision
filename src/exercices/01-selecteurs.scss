@@ -1,3 +1,21 @@
-.selectors {
-  //  Ajoutez votre css ici
+.selectors h2 {
+  font-size: 25px;
+}
+
+.selectors h2,
+.selectors h3 {
+  font-weight: 700;
+}
+
+.selectors .section .year {
+  color: red;
+}
+
+.selectors .section h3 {
+  text-decoration: underline;
+}
+
+.selectors .category,
+.selectors .year {
+  font-style: italic;
 }
