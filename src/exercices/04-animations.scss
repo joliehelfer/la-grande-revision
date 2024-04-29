@@ -6,6 +6,7 @@
     border-radius: 50%;
     border: 5px solid #8ecae6;
     border-top-color: #023047;
+    animation: spin 1s infinite linear;
   }
 
   .progress {
@@ -20,5 +21,31 @@
     height: 100%;
     background: #023047;
     border-radius: 10px;
+    animation: progressing 5s linear alternate infinite;
+  }
+}
+
+@keyframes spin {
+  from {
+    rotate: 0;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes progressing {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
   }
 }
